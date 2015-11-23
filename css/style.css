@@ -2,6 +2,18 @@
   background-image: url("http://www.premeraux.com/img/logo_pbc.png") !important;
 }
 
-.location-dropdown { margin-bottom: 8px; }
-.location-dropdown button { border: 0; }
-.location-dropdown ul { min-width: 0; }
+#navigation-home {
+  border-top: 1px solid #ddd; /* update */
+  padding: 10px 20px 6px; /* update */
+}
+
+#navigation-home a {
+  color: #666;
+  margin-right: 6px;
+}
+
+#navigation-home .icon-facebook2:hover { color: #3B5998; }
+#navigation-home .icon-twitter:hover   { color: #4099FF; }
+#navigation-home .icon-youtube:hover   { color: #E52D27; }
+#navigation-home .icon-bubbles:hover   { color: #009BDA; }
+#navigation-home .icon-large    { transition: color .2s; }
