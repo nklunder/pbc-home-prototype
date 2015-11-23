@@ -1,0 +1,49 @@
+@import "icomoon";
+
+#logo { background-image: url("http://www.premeraux.com/img/logo_pbc.png") !important; }
+
+html, body {
+  font-size: 16px;
+  background-color: #eee; /* site override */
+}
+footer {
+  padding: 0; /* site override */
+}
+
+.footer-main {
+  margin-bottom: 1.5em;
+  background-color: #d1d1ce;
+}
+
+.footer-sitemap {
+  padding-bottom: 1em;
+  background-color: #004b6c;
+  h3 {
+    font-size: 1.2em;
+    color: white;
+  }
+  li {
+    font-size: .8em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    a {
+      color: #e9e4d7;
+    }
+  }
+
+}
+
+.footer-social-links {
+  padding: 1.8em 0;
+  a {
+    color: #004b6c;
+    margin-right: 8px;
+    &:last-child { margin-right: 0; }
+    &:hover { text-decoration: none; }
+  }
+  .icon-facebook2:hover { color: #3B5998; }
+  .icon-twitter:hover   { color: #4099FF; }
+  .icon-youtube:hover   { color: #E52D27; }
+  .icon-bubbles:hover   { color: #009BDA; }
+  .icon-large    { transition: color .2s; }
+}
