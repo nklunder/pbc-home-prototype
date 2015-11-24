@@ -1,0 +1,24 @@
+{
+  "name": "pbc-home-prototype",
+  "version": "1.0.0",
+  "description": "[![forthebadge](http://forthebadge.com/images/badges/designed-in-ms-paint.svg)](http://forthebadge.com)\r [![forthebadge](http://forthebadge.com/images/badges/validated-html2.svg)](http://forthebadge.com)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nklunder/pbc-home-prototype.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nklunder/pbc-home-prototype/issues"
+  },
+  "homepage": "https://github.com/nklunder/pbc-home-prototype#readme",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0"
+  }
+}
