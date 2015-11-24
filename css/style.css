@@ -1502,22 +1502,23 @@ footer {
   padding: 0;
   /* site override */ }
 
-.footer-main {
-  margin-bottom: 1.5em;
-  background-color: #d1d1ce; }
+.footer-sitemap, .footer-copyright, .footer-social-links {
+  padding: 0 1em;
+  padding: 0 calc(50% - 585px); }
 
 .footer-sitemap {
+  margin-bottom: 1.5em;
   padding-bottom: 1em;
-  background-color: #004b6c; }
+  background-color: #1d374b; }
   .footer-sitemap h3 {
     font-size: 1.2em;
     color: white; }
+  .footer-sitemap a {
+    color: #7dcdf1; }
   .footer-sitemap li {
-    font-size: .8em;
+    font-size: .9em;
     line-height: 1.5;
     margin-bottom: 1em; }
-    .footer-sitemap li a {
-      color: #e9e4d7; }
 
 .footer-social-links {
   padding: 1.8em 0; }

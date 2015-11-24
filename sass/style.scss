@@ -10,30 +10,40 @@ footer {
   padding: 0; /* site override */
 }
 
-.footer-main {
-  margin-bottom: 1.5em;
-  background-color: #d1d1ce;
+// Sass silent placeholder
+//   uses padding to give components a max width of 1170px
+//   instead of having to wrap content in a container div
+%layout-constrained {
+  padding: 0 1em;
+  padding: 0 calc(50% - 585px);
 }
 
 .footer-sitemap {
+  @extend %layout-constrained;
+  margin-bottom: 1.5em;
   padding-bottom: 1em;
-  background-color: #004b6c;
+  background-color: #1d374b;
   h3 {
     font-size: 1.2em;
     color: white;
   }
+  a {
+    color: #7dcdf1;
+  }
   li {
-    font-size: .8em;
+    font-size: .9em;
     line-height: 1.5;
     margin-bottom: 1em;
-    a {
-      color: #e9e4d7;
-    }
-  }
 
+  }
+}
+
+.footer-copyright {
+  @extend %layout-constrained;
 }
 
 .footer-social-links {
+  @extend %layout-constrained;
   padding: 1.8em 0;
   a {
     color: #004b6c;
