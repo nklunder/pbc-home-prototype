@@ -1493,49 +1493,48 @@
 #logo {
   background-image: url("http://www.premeraux.com/img/logo_pbc.png") !important; }
 
+/* current site overrides */
 html, body {
-  font-size: 16px;
-  background-color: #eee;
-  /* site override */ }
+  font-size: 16px; }
 
 footer {
-  padding: 0;
-  /* site override */ }
+  padding: 0; }
 
-.footer-sitemap, .footer-copyright, .footer-social-links {
-  padding: 0 1em;
-  padding: 0 calc(50% - 585px); }
+.footer-sitemap, .footer-copyright, .footer-location, .footer-social-links {
+  padding: 1em;
+  padding: 1em calc(50% - 585px); }
 
 .footer-sitemap {
-  margin-bottom: 1.5em;
-  padding-bottom: 1em;
-  background-color: #1d374b; }
+  background-color: #ccc; }
   .footer-sitemap h3 {
-    font-size: 1.2em;
-    color: white; }
-  .footer-sitemap a {
-    color: #7dcdf1; }
+    font-size: 1.2em; }
   .footer-sitemap li {
     font-size: .9em;
     line-height: 1.5;
     margin-bottom: 1em; }
 
-.footer-social-links {
-  padding: 1.8em 0; }
-  .footer-social-links a {
-    color: #004b6c;
-    margin-right: 8px; }
-    .footer-social-links a:last-child {
-      margin-right: 0; }
-    .footer-social-links a:hover {
-      text-decoration: none; }
-  .footer-social-links .icon-facebook2:hover {
-    color: #3B5998; }
-  .footer-social-links .icon-twitter:hover {
-    color: #4099FF; }
-  .footer-social-links .icon-youtube:hover {
-    color: #E52D27; }
-  .footer-social-links .icon-bubbles:hover {
-    color: #009BDA; }
-  .footer-social-links .icon-large {
-    transition: color .2s; }
+.footer-location {
+  background-color: #efefef; }
+
+.footer-social-links a {
+  color: #004b6c;
+  margin-right: 8px; }
+  .footer-social-links a:last-child {
+    margin-right: 0; }
+  .footer-social-links a:hover {
+    text-decoration: none; }
+
+.footer-social-links .icon-facebook2:hover {
+  color: #3B5998; }
+
+.footer-social-links .icon-twitter:hover {
+  color: #4099FF; }
+
+.footer-social-links .icon-youtube:hover {
+  color: #E52D27; }
+
+.footer-social-links .icon-bubbles:hover {
+  color: #009BDA; }
+
+.footer-social-links .icon-large {
+  transition: color .2s; }
