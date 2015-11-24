@@ -1,10 +1,5 @@
+@import "current-css-overrides";
 @import "icomoon";
-
-#logo { background-image: url("http://www.premeraux.com/img/logo_pbc.png") !important; }
-
-/* current site overrides */
-html, body { font-size: 16px; }
-footer { padding: 0; }
 
 // Sass silent placeholder
 //   uses padding to give components a max width of 1170px
@@ -18,7 +13,7 @@ footer { padding: 0; }
 
 .footer-sitemap {
   @extend %layout-constrained;
-  background-color: #ccc;
+  background-color: #ddd;
   h3 {
     font-size: 1.2em;
   }
