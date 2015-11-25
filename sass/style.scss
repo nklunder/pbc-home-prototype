@@ -1,42 +1,59 @@
 @import "current-css-overrides";
 @import "icomoon";
 
-// Sass silent placeholder
-//   uses padding to give components a max width of 1170px
-//   instead of having to wrap content in a container div
-%layout-constrained {
-  padding: 1em;
-  padding: 1em calc(50% - 585px);
+@media (max-width: 1200px) {
+  /* padding for viewport widths that are less than total calc value*/
+  .wrap {
+    padding: 1em;
+  }
 }
 
 //=========================================================
 
+.wrap {
+  padding: 1em; /* fallback for browsers that don't support calc */
+  padding: 1em calc(50% - 584px);
+}
+
+.promo-block {
+  color: #fff;
+  background: #0f32a4;
+  background: radial-gradient(circle at 2.02% 60.00%, #00a1c4, transparent 100%),
+              radial-gradient(circle at 97.98% 58.98%, #007fa4, transparent 100%),
+              #0f32a4;
+  h2 {
+    font-size: 2.4em;
+    color: #fff;
+    margin: .4em 0;
+  }
+  a {
+    color: #5A5F66;
+    text-decoration: none;
+  }
+}
+
 .footer-sitemap {
-  @extend %layout-constrained;
-  background-color: #ddd;
   h3 {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    color: #5A5F66;
   }
   li {
     font-size: .9em;
     line-height: 1.5;
     margin-bottom: 1em;
   }
-}
-
-.footer-copyright {
-  @extend %layout-constrained;
+  a {
+    color: #004b6c;
+  }
 }
 
 .footer-location {
-  @extend %layout-constrained;
-  background-color: #efefef;
+  background-color: #EDEFF2;
 }
 
 .footer-social-links {
-  @extend %layout-constrained;
   a {
-    color: #004b6c;
+    color: #5A5F66;
     margin-right: 8px;
     &:last-child { margin-right: 0; }
     &:hover { text-decoration: none; }
