@@ -22,7 +22,8 @@
     position: absolute;
     background-color: red;
     top: -10px;
-    right: -10px;
+    right: -10px
+    ;
   }
 }
 .modal-backdrop {
@@ -31,7 +32,7 @@
 
 .promo-block {
   color: #fff;
-  background: #0f32a4;
+  background: #37474f;
   background: radial-gradient(circle at 2.02% 60.00%, #00a1c4, transparent 100%),
               radial-gradient(circle at 97.98% 58.98%, #007fa4, transparent 100%),
               #0f32a4;
@@ -41,15 +42,26 @@
     margin: .4em 0;
   }
   a {
+    background-color: #c4d52b;
     color: #5A5F66;
     text-decoration: none;
+    border: 2px solid #c4d52b;
+    &:hover {
+      color: #c4d52b;
+      border: 2px solid #c4d52b;
+      background-color: transparent;
+    }
   }
 }
 
+.footer-logins {
+  background-color: #007fa4;
+}
+
 .footer-sitemap {
+  background-color: #37474f;
   h3 {
     font-size: 1.3em;
-    color: #5A5F66;
   }
   li {
     font-size: .9em;
@@ -57,17 +69,30 @@
     margin-bottom: 1em;
   }
   a {
-    color: #004b6c;
+    color: #fff;
+  }
+  .btn-secondary {
+    border: 2px solid #33cccc;
+    color: #33cccc;
+    &:hover {
+      color: #fff;
+      background-color: #33cccc;
+    }
   }
 }
 
 .footer-location {
-  background-color: #EDEFF2;
+}
+
+.footer-copyright {
+  color: #fff;
+  background-color: #222c31;
 }
 
 .footer-social-links {
+  @extend .footer-copyright;
   a {
-    color: #5A5F66;
+    color: #fff;
     margin-right: 8px;
     &:last-child { margin-right: 0; }
     &:hover { text-decoration: none; }
