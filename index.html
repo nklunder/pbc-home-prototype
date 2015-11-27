@@ -11,11 +11,11 @@
 </head>
 <body>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="main-container">
     <header id="header" class="row wrap text-center">
       <div class="notification pull-right" data-toggle="modal" data-target="#notification-modal">
         <span class="icon icon-large icon-bell"></span>
-        <span class="badge">4</span>
+        <span class="badge" id="notification-count">4</span>
       </div>
 
       <!-- <div class="row">
@@ -290,10 +290,10 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            <h4 class="modal-title" id="myModalLabel">Notifications</h4>
           </div>
-          <div class="modal-body">
-            ...
+          <div class="modal-body" id="notification-list">
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -302,6 +302,6 @@
         </div>
       </div>
     </div>
-
+  <script src="app.js"></script>
 </body>
 </html>
