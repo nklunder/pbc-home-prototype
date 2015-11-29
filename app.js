@@ -17,12 +17,18 @@ var notifications = [
 notifications.forEach(function (notification) {
   var notificationCount = document.getElementById("notification-count"),
       notificationList = document.getElementById("notification-list"),
-      container, title, body;
+      item;
+
 
   item = document.createElement("div");
   item.innerHTML = (
-    "<h4>" + notification.title + "</h4>" +
-    "<p>" + notification.body + "</p>"
+    "<div id=" + notification.id + ">" +
+      "<button type='button' class='close' data-target='#" + notification.id + "' data-dismiss='alert'>" +
+        "<span aria-hidden='true'>&times;</span>" +
+      "</button>" +
+      "<h4>" + notification.title + "</h4>" +
+      "<p>" + notification.body + "</p>" +
+    "</div>"
   );
 
   notificationList.appendChild(item);
