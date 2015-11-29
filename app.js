@@ -14,22 +14,30 @@ var notifications = [
   }
 ];
 
-notifications.forEach(function (notification) {
+function fillNotificationModal() {
   var notificationCount = document.getElementById("notification-count"),
       notificationList = document.getElementById("notification-list"),
-      item;
+      item, totalItems = 0;
+
+  notifications.forEach(function (notification) {
+    item = document.createElement("div");
+    item.innerHTML = (
+      "<div id=" + notification.id + ">" +
+        "<button type='button' class='close' data-target='#" + notification.id + "' data-dismiss='alert'>" +
+          "<span aria-hidden='true'>&times;</span>" +
+        "</button>" +
+        "<h4>" + notification.title + "</h4>" +
+        "<p>" + notification.body + "</p>" +
+      "</div>"
+    );
+
+    totalItems++;
+
+    notificationList.appendChild(item);
+  });
+
+  notificationCount.textContent = totalItems;
+}
 
 
-  item = document.createElement("div");
-  item.innerHTML = (
-    "<div id=" + notification.id + ">" +
-      "<button type='button' class='close' data-target='#" + notification.id + "' data-dismiss='alert'>" +
-        "<span aria-hidden='true'>&times;</span>" +
-      "</button>" +
-      "<h4>" + notification.title + "</h4>" +
-      "<p>" + notification.body + "</p>" +
-    "</div>"
-  );
-
-  notificationList.appendChild(item);
-});
+fillNotificationModal();
