@@ -34,6 +34,36 @@
   z-index: -5000;
 }
 
+
+.slide-alert {
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 0;
+  padding: 0;
+  border-width: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  animation: slidein 6s forwards 1s;
+}
+
+@keyframes slidein {
+  0% {
+    border-width: 1px;
+  }
+  15% {
+    height: 55px;
+    padding: 15px;
+  }
+  85% {
+    height: 55px;
+    padding: 15px;
+    border-width: 1px;
+  }
+  100% {
+    height: 0;
+  }
+}
+
 .promo-block {
   color: #fff;
   background: #37474f; /* fallback for browsers with no gradient support */
