@@ -1,5 +1,6 @@
 @import "current-css-overrides";
 @import "icomoon";
+@import "components";
 
 
 .wrap {
@@ -9,7 +10,7 @@
 @media (max-width: 1200px) {
   /* Padding for viewport widths that are less than total calc value.
      Doesn't work without the #main-container selector or an important
-     tag. I blame Bootstrap. ¯\_(ツ)_/¯ */
+     tag. Can't figure out why. ¯\_(ツ)_/¯ */
   #main-container .wrap {
     padding: 1em;
   }
@@ -49,7 +50,9 @@
   z-index: -5000; /* overlay appears on top of modal otherwise */
 }
 
-
+.tools {
+  background-color: #fff;
+}
 
 
 
