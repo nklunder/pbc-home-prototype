@@ -36,6 +36,12 @@ function initNotifications() {
     totalItems++;
   });
 
+  notificationList.addEventListener("click", function (evt) {
+    if (evt.target.nodeName == "SPAN" || evt.target.nodeName == "BUTTON") {
+      notificationCount.textContent = notificationCount.textContent - 1;
+    }
+  });
+
   notificationCount.textContent = totalItems;
 }
 
