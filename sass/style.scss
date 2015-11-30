@@ -11,6 +11,15 @@
   .audience-login {
     margin: 12px 0 !important; /* !important needed to override bootstrap's .media:first-child class */
   }
+  .primary-banner {
+    background-image: none;
+    background-color: darkblue;
+  }
+}
+@media (min-width: 768px) {
+  .primary-banner {
+    background-image: url("../img/hero-image.jpg");
+  }
 }
 @media (max-width: 1200px) {
   /* Padding for viewport widths that are less than total calc value.
@@ -21,6 +30,18 @@
   }
 }
 
+/* experimental override of default button styling */
+.btn-default {
+  background-color: #c4d52b;
+  color: #5A5F66;
+  text-decoration: none;
+  border: 2px solid #c4d52b;
+  &:hover {
+    color: #c4d52b;
+    border: 2px solid #c4d52b;
+    background-color: transparent;
+  }
+}
 /* Very hacky slide-in alert code. Intended only to demonstrate look and feel
    of functionality */
 .slide-alert {
@@ -55,6 +76,15 @@
   z-index: -5000; /* overlay appears on top of modal otherwise */
 }
 
+.primary-banner {
+  background-size: cover;
+  background-position: top center;
+  div:first-child {
+    color: #fff;
+    padding: 50px 0;
+  }
+}
+
 .tools {
   background-color: #fff;
 }
@@ -73,17 +103,7 @@
     color: #fff;
     margin: .4em 0;
   }
-  a {
-    background-color: #c4d52b;
-    color: #5A5F66;
-    text-decoration: none;
-    border: 2px solid #c4d52b;
-    &:hover {
-      color: #c4d52b;
-      border: 2px solid #c4d52b;
-      background-color: transparent;
-    }
-  }
+
 }
 
 .btn, .audience-login {
