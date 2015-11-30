@@ -7,6 +7,11 @@
   padding: 1em; /* fallback for browsers that don't support calc */
   padding: 1em calc(50% - 584px);
 }
+@media (max-width: 767px) {
+  .audience-login {
+    margin: 12px 0 !important; /* !important needed to override bootstrap's .media:first-child class */
+  }
+}
 @media (max-width: 1200px) {
   /* Padding for viewport widths that are less than total calc value.
      Doesn't work without the #main-container selector or an important
@@ -113,7 +118,7 @@
 }
 
 .footer-sitemap {
-  background-color: #37474f;
+  background-color: #29353B;
   h3 {
     color: #96e5e5;
     font-size: 1.3em;
