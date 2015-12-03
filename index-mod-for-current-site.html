@@ -250,12 +250,23 @@
       <p><a class="btn btn-default btn-lg" href="#" role="button">Search for jobs</a></p>
     </div>
 
-    <footer>
-      <div class="row footer-logins wrap">
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+      <div class="footer-logins">
         <div class="col-sm-4">
           <a href="/wa/employer/" class="media audience-login">
             <div class="media-left media-middle">
-              <i class="icon-aid-kit icon-large"></i>
+              <i class="icon-aid icon-large"></i>
             </div>
             <div class="media-body">
               <h4>I'm a provider</h4>
@@ -287,7 +298,7 @@
         </div>
       </div>
 
-      <div class="row footer-sitemap wrap">
+      <div class="footer-sitemap">
         <div class="col-sm-3">
           <h3>Help</h3>
           <ul class="unstyled">
@@ -296,7 +307,7 @@
             <li><a href="#">Webhelp</a></li>
             <li><a href="#">24-Hour Nurseline</a></li>
           </ul>
-          <a href="#" class="btn btn-secondary">Feedback</a>
+          <a href="#" class="btn btn-default">Feedback</a>
         </div>
 
         <div class="col-sm-4">
@@ -329,35 +340,84 @@
         </div>
       </div>
 
-      <div class="row footer-location text-center wrap">
-        <span class="icon icon-location2"></span> Change your location if you live or your employer is in one of these states:
-        <label for="state-wa" class="radio-inline">
-          <input type="radio" name="state-select" id="state-wa" checked> Washington State
-        </label>
-        <label for="state-ak" class="radio-inline">
-          <input type="radio" name="state-select" id="state-ak"> Alaska
-        </label>
-      </div>
-
-      <div class="row footer-copyright wrap">
+      <div class="footer-copyright">
         <p class="text-center small"><span><script>document.write("&copy; " + new Date().getFullYear() + " ");</script></span>Premera Blue Cross is an Independent Licensee of the Blue Cross Blue Shield Association serving businesses and residents of Alaska and Washington state, excluding Clark County.</p>
       </div>
 
-      <div class="footer-social-links text-center wrap">
+      <div class="footer-social-links text-center">
         <a title="Facebook" href="//www.facebook.com/premerabluecross">
-          <span class="icon-large icon-facebook2"></span>
+          <span class="icon-large icon-facebook"></span>
         </a>
         <a title="Twitter" href="//twitter.com/premera">
           <span class="icon-large icon-twitter"></span>
         </a>
         <a title="YouTube" href="//www.youtube.com/user/premerabluecross">
-          <span class="icon-large icon-youtube"></span>
+          <span class="icon-large icon-youtube2"></span>
         </a>
         <a title="PremeraNews" href="http://premeranews.com/">
           <span class="icon-large icon-bubbles"></span>
         </a>
       </div>
     </footer>
+
+    <style>
+    @media (max-width: 767px) {
+      .audience-login {
+        margin: 12px 0 !important;
+        /* !important needed to override bootstrap's .media:first-child class */ } }
+
+    .audience-login {
+      transition: all .2s; }
+
+    .audience-login {
+      padding: 6px 16px;
+      border-radius: 4px;
+      line-height: 1; }
+      .audience-login h4, .audience-login i {
+        margin: 0; }
+      .audience-login span {
+        font-size: 12px; }
+      .audience-login:hover {
+        text-decoration: none;
+        background-color: #fff;
+        color: #007fa4; }
+        .audience-login:hover span, .audience-login:hover h4, .audience-login:hover i {
+          color: #007fa4; }
+
+    .footer-sitemap li {
+      font-size: .9em;
+      margin-bottom: 1em; }
+
+    .footer-social-links a {
+      color: #666;
+      margin-right: 8px; }
+      .footer-social-links a:last-child {
+        margin-right: 0; }
+      .footer-social-links a:hover {
+        text-decoration: none; }
+
+    .footer-social-links .icon-facebook2:hover {
+      color: #3B5998; }
+
+    .footer-social-links .icon-twitter:hover {
+      color: #4099FF; }
+
+    .footer-social-links .icon-youtube:hover {
+      color: #E52D27; }
+
+    .footer-social-links .icon-bubbles:hover {
+      color: #009BDA; }
+
+    .footer-social-links .icon-large {
+      transition: color .2s; }
+
+    </style>
+
+
+
+
+
+
   </div><!-- end #main-container -->
 
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
