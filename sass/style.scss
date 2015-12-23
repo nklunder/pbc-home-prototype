@@ -2,7 +2,9 @@
 @import "global-config-and-vars";
 
 @import "header";
+@import "main-hero-panel";
 @import "tool-panel";
+@import "featured-service";
 @import "testimonials";
 @import "footer";
 
@@ -64,19 +66,12 @@
   z-index: -5000; /* overlay appears on top of modal otherwise */
 }
 
-.primary-banner {
-  background-size: cover;
-  background-position: top center;
-  div:first-child {
-    padding: 50px 0;
-  }
-}
 
 .promo-block {
   color: #fff;
   background: #91e5e5; /* fallback for browsers with no gradient support */
-  background: radial-gradient(circle at 2.02% 60.00%, #00a1c4, transparent 100%),
-              radial-gradient(circle at 97.98% 58.98%, #007fa4, transparent 100%),
+  background: radial-gradient(circle at 0% 0%, lighten($premera-blue, 10%), transparent 100%),
+              radial-gradient(circle at 110% 60%, darken($premera-blue, 5%), transparent 100%),
               #91e5e5;
   h2 {
     font-size: 2.4em;
