@@ -1,0 +1,71 @@
+.footer-logins {
+  background-color: #007fa4;
+}
+
+.audience-login {
+  display: block;
+  padding: 6px 16px;
+  border-radius: 4px;
+  line-height: 1;
+  h4, i {
+    color: #fff;
+    margin: 0;
+  }
+  span {
+    color: #ddd;
+    font-size: 12px;
+  }
+  &:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #007fa4;
+    span, h4, i {
+      color: #007fa4;
+    }
+  }
+}
+
+.footer-sitemap {
+  background-color: #29353B;
+  h3 {
+    color: #96e5e5;
+    font-size: 1.3em;
+  }
+  li {
+    font-size: .9em;
+    line-height: 1.2;
+    margin-bottom: 1em;
+  }
+  a {
+    color: #fff;
+  }
+  .btn-secondary {
+    border: 2px solid #96e5e5;
+    color: #96e5e5;
+    &:hover {
+      color: #fff;
+      border-color: #33cccc;
+      background-color: #33cccc;
+    }
+  }
+}
+
+.footer-copyright {
+  color: #fff;
+  background-color: #222c31;
+}
+
+.footer-social-links {
+  @extend .footer-copyright;
+  a {
+    color: #fff;
+    margin-right: 8px;
+    &:last-child { margin-right: 0; }
+    &:hover { text-decoration: none; }
+  }
+  .icon-facebook2:hover { color: #3B5998; }
+  .icon-twitter:hover   { color: #4099FF; }
+  .icon-youtube:hover   { color: #E52D27; }
+  .icon-bubbles:hover   { color: #009BDA; }
+  .icon-large    { transition: color .2s; }
+}

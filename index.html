@@ -3,20 +3,33 @@
 <head>
   <meta charset="utf-8">
   <title>Premera Home</title>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans|Work+Sans:500' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://www.premeraux.com/css/main-pbc.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="slide-alert alert alert-danger text-center">This is an alert</div>
+  <!-- <div class="slide-alert alert alert-danger text-center">This is an alert</div> -->
   <div class="container-fluid" id="main-container">
-    <header id="header" class="row wrap text-center">
-      <div class="notification pull-right" data-toggle="modal" data-target="#notification-modal">
+    <header id="header" class="wrap">
+      <nav class="primary-navigation">
+        <a href="#">
+          <object id="pbc-logo" data="img/logo.svg" type="image/svg+xml">
+            <!-- fallback for browsers w/o SVG support -->
+            <img src="img/logo.svg" height="48" alt="">
+          </object>
+        </a>
+        <a href="#">Member Services</a>
+        <a href="#">Find a Doctor</a>
+        <a href="#">Pharmacy</a>
+        <a href="#">Shop for Plans</a>
+        <a href="#">Healthsource Blog</a>
+      </nav>
+      <!-- <div class="notification pull-right" data-toggle="modal" data-target="#notification-modal">
         <span class="icon icon-large icon-bell"></span>
         <span class="badge" id="notification-count"></span>
-      </div>
-      <span class="icon icon-checkmark"></span>
+      </div> -->
       <!-- <div class="row">
         <div class="col-xs-12">
           <a id="logo" title="Go to home" href="#"></a>
@@ -185,44 +198,52 @@
     </header>
 
     <div class="row wrap primary-banner">
-      <div class="col-sm-6 col-md-offset-1 col-md-5">
-        <h1>Why Choose Premera</h1>
-        <p>Premera Blue Cross is the leading health insurance company in the Northwest. For more than 80 years, we've has provided medical plans for individuals and families and given our members the peace of mind that comes with our coverage. We also provide health insurance for employers including Amazon, Alaska Air Group, Starbucks, and more great companies in Seattle and beyond.</p>
+      <div class="col-sm-offset-1 col-sm-6">
+        <h1>Get covered by Washington’s #1 health plan</h1>
+        <p>Individual and family plans are available until January 31. Enroll today!</p>
         <p><a href="#" class="btn btn-default btn-lg">Compare plans</a></p>
       </div>
     </div>
 
     <div class="row wrap tools">
       <div class="col-sm-3">
-        <a href="#" class="tool-panel">
-          <img src="img/pay-bill.png" width="48" alt="...">
-          <h3>Pay your monthly bill</h3>
-          <p>Individual plan members can pay bill using one of the five convenient options</p>
-        </a>
+        <div class="tool-panel">
+          <img src="img/pay-bill.png" alt="">
+          <h3>Pay monthly bill</h3>
+          <p>Individual plan members can pay bill using one of the five convenient options.</p>
+
+          <a href="#">Pay your bill</a>
+        </div>
       </div>
 
       <div class="col-sm-3">
-        <a href="#" class="tool-panel">
-          <img src="img/benefits.png" width="48" alt="...">
-          <h3>Benefits summary</h3>
+        <div class="tool-panel">
+          <img src="img/benefits.png" alt="">
+          <h3>Benefit summary</h3>
           <p>Your Benefit Summary shows you the service costs covered by your insurance.</p>
-        </a>
+
+          <a href="#">View benefits summary</a>
+        </div>
       </div>
 
       <div class="col-sm-3">
-        <a href="#" class="tool-panel">
-          <img src="img/claims.png" width="48" alt="...">
+        <div class="tool-panel">
+          <img src="img/claims.png" alt="">
           <h3>Claims activity</h3>
-          <p>Check your most recent claims, find out how much you have spend and how much you owe</p>
-        </a>
+          <p>Check your most recent claims, find out how much you have spend and how much you owe.</p>
+
+          <a href="#">View claims</a>
+        </div>
       </div>
 
       <div class="col-sm-3">
-        <a href="#" class="tool-panel">
-          <img src="img/id.png" width="48" alt="...">
+        <div class="tool-panel">
+          <img src="img/id.png" alt="">
           <h3>ID card</h3>
           <p>If you need to order a replacement ID card, log in to our secure member site.</p>
-        </a>
+
+          <a href="#">Order ID card</a>
+        </div>
       </div>
     </div>
 

@@ -1,24 +1,26 @@
 @import "current-css-overrides";
+
+@import "global-config-and-vars";
 @import "icomoon";
-@import "components";
+
+@import "header";
+@import "tool-panel";
+@import "footer";
 
 
-.wrap {
-  padding: 1em; /* fallback for browsers that don't support calc */
-  padding: 1em calc(50% - 584px);
-}
+
 @media (max-width: 767px) {
   .audience-login {
     margin: 12px 0 !important; /* !important needed to override bootstrap's .media:first-child class */
   }
   .primary-banner {
     background-image: none;
-    background-color: darkblue;
+    background-color: darken($premera-blue, 10%);
   }
 }
 @media (min-width: 768px) {
   .primary-banner {
-    background-image: url("../img/hero-image.jpg");
+    background-image: linear-gradient(to right, #fff, transparent), url("../img/u0.png");
   }
 }
 @media (max-width: 1200px) {
@@ -30,18 +32,6 @@
   }
 }
 
-/* experimental override of default button styling */
-.btn-default {
-  background-color: #c4d52b;
-  color: #5A5F66;
-  text-decoration: none;
-  border: 2px solid #c4d52b;
-  &:hover {
-    color: #c4d52b;
-    border: 2px solid #c4d52b;
-    background-color: transparent;
-  }
-}
 /* Very hacky slide-in alert code. Intended only to demonstrate look and feel
    of functionality */
 .slide-alert {
@@ -59,7 +49,6 @@
   85%  { height: 55px; padding: 15px; border-width: 1px; }
   100% { height: 0; }
 }
-
 
 .notification {
   position: relative;
@@ -80,17 +69,9 @@
   background-size: cover;
   background-position: top center;
   div:first-child {
-    color: #fff;
     padding: 50px 0;
   }
 }
-
-.tools {
-  background-color: #fff;
-}
-
-
-
 
 .promo-block {
   color: #fff;
@@ -103,81 +84,4 @@
     color: #fff;
     margin: .4em 0;
   }
-
-}
-
-.btn, .audience-login {
-  transition: all .2s;
-}
-
-.footer-logins {
-  background-color: #007fa4;
-}
-
-.audience-login {
-  display: block;
-  padding: 6px 16px;
-  border-radius: 4px;
-  line-height: 1;
-  h4, i {
-    color: #fff;
-    margin: 0;
-  }
-  span {
-    color: #ddd;
-    font-size: 12px;
-  }
-  &:hover {
-    text-decoration: none;
-    background-color: #fff;
-    color: #007fa4;
-    span, h4, i {
-      color: #007fa4;
-    }
-  }
-}
-
-.footer-sitemap {
-  background-color: #29353B;
-  h3 {
-    color: #96e5e5;
-    font-size: 1.3em;
-  }
-  li {
-    font-size: .9em;
-    line-height: 1.2;
-    margin-bottom: 1em;
-  }
-  a {
-    color: #fff;
-  }
-  .btn-secondary {
-    border: 2px solid #96e5e5;
-    color: #96e5e5;
-    &:hover {
-      color: #fff;
-      border-color: #33cccc;
-      background-color: #33cccc;
-    }
-  }
-}
-
-.footer-copyright {
-  color: #fff;
-  background-color: #222c31;
-}
-
-.footer-social-links {
-  @extend .footer-copyright;
-  a {
-    color: #fff;
-    margin-right: 8px;
-    &:last-child { margin-right: 0; }
-    &:hover { text-decoration: none; }
-  }
-  .icon-facebook2:hover { color: #3B5998; }
-  .icon-twitter:hover   { color: #4099FF; }
-  .icon-youtube:hover   { color: #E52D27; }
-  .icon-bubbles:hover   { color: #009BDA; }
-  .icon-large    { transition: color .2s; }
 }

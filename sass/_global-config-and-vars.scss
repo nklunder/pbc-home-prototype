@@ -1,0 +1,37 @@
+// Color Palette
+$black: #212121;
+$premera-blue: #009bda;
+
+// variable for header height so it only needs to be adjusted in one place
+$header-height: 80px;
+
+// padding to offset content from fixed-header
+body {
+  color: $black;
+  padding-top: $header-height;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Work Sans', sans-serif; font-weight: 500; }
+
+.wrap {
+  // fallback for browsers that don't support calc
+  padding: 1em;
+  padding: 1em calc(50% - 584px);
+}
+
+// experimental override of default button styling
+.btn-default {
+  background-color: #c4d52b;
+  color: #5A5F66;
+  text-decoration: none;
+  border: 2px solid #c4d52b;
+  &:hover {
+    color: #c4d52b;
+    border: 2px solid #c4d52b;
+    background-color: transparent;
+  }
+}
+
+.btn, .audience-login {
+  transition: all .2s;
+}
