@@ -1,10 +1,9 @@
-@import "current-css-overrides";
-
+@import "lib/icomoon";
 @import "global-config-and-vars";
-@import "icomoon";
 
 @import "header";
 @import "tool-panel";
+@import "testimonials";
 @import "footer";
 
 
@@ -15,7 +14,7 @@
   }
   .primary-banner {
     background-image: none;
-    background-color: darken($premera-blue, 10%);
+    background-color: lighten($premera-blue, 40%);
   }
 }
 @media (min-width: 768px) {

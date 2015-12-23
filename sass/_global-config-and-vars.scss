@@ -1,17 +1,24 @@
 // Color Palette
 $black: #212121;
 $premera-blue: #009bda;
-
+$accent1: #33cccc;
 // variable for header height so it only needs to be adjusted in one place
 $header-height: 80px;
 
-// padding to offset content from fixed-header
+// overrides of current stylesheet
+body #main-container { width: 100%; max-width: 100%; box-shadow: none; }
+footer { padding: 0; border-top: 0; }
+
+
 body {
+  font-size: 16px;
   color: $black;
+  // padding to offset content from fixed-header
   padding-top: $header-height;
 }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Work Sans', sans-serif; font-weight: 500; }
+h1 { color: #006BB7; }
 
 .wrap {
   // fallback for browsers that don't support calc
