@@ -7,18 +7,20 @@
   padding: 6px 16px;
   border-radius: 4px;
   line-height: 1;
+
   h4, i {
-    color: #fff;
     margin: 0;
+    color: #fff;
   }
   span {
     color: #ddd;
     font-size: 12px;
   }
   &:hover {
-    text-decoration: none;
     background-color: #fff;
     color: #007fa4;
+    text-decoration: none;
+
     span, h4, i {
       color: #007fa4;
     }
@@ -27,14 +29,15 @@
 
 .footer-sitemap {
   background-color: #29353B;
+
   h3 {
     color: #96e5e5;
     font-size: 1.3em;
   }
   li {
+    margin-bottom: 1em;
     font-size: .9em;
     line-height: 1.2;
-    margin-bottom: 1em;
   }
   a {
     color: #fff;
@@ -42,24 +45,27 @@
   .btn-secondary {
     border: 2px solid #96e5e5;
     color: #96e5e5;
+
     &:hover {
-      color: #fff;
       border-color: #33cccc;
       background-color: #33cccc;
+      color: #fff;
     }
   }
 }
 
 .footer-copyright {
-  color: #fff;
   background-color: #222c31;
+  color: #fff;
 }
 
 .footer-social-links {
   @extend .footer-copyright;
+
   a {
-    color: #fff;
     margin-right: 8px;
+    color: #fff;
+
     &:last-child { margin-right: 0; }
     &:hover { text-decoration: none; }
   }

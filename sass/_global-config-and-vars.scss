@@ -6,7 +6,7 @@ $accent1: #33cccc;
 $header-height: 90px;
 
 // overrides of current stylesheet
-body #main-container { width: 100%; max-width: 100%; box-shadow: none; }
+body #main-container { max-width: 100%; width: 100%; box-shadow: none; }
 footer { padding: 0; border-top: 0; }
 
 
@@ -28,14 +28,15 @@ h1 { color: #006BB7; }
 
 // experimental override of default button styling
 .btn-default {
+  border: 2px solid #c4d52b;
   background-color: #c4d52b;
   color: #5A5F66;
   text-decoration: none;
-  border: 2px solid #c4d52b;
+
   &:hover {
-    color: #c4d52b;
     border: 2px solid #c4d52b;
     background-color: transparent;
+    color: #c4d52b;
   }
 }
 
